@@ -80,6 +80,7 @@ final class ConnectController implements ContainerAwareInterface
      */
     public function registrationAction(Request $request, $key)
     {
+
         $connect = $this->container->getParameter('hwi_oauth.connect');
         if (!$connect) {
             throw new NotFoundHttpException();
